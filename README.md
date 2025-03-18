@@ -7,6 +7,59 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# 🛍️ Laravel Product Catalog with Shopping Cart & Discounts
+
+This is a simple Laravel project showcasing a **product catalog**, a **shopping cart with session-based storage**, and a **dynamic discount system**.
+
+---
+
+## 🚀 Features
+
+✅ **Product Listing** - Displays products with name, price, and an "Add to Cart" button.  
+✅ **Shopping Cart** - Users can add/remove products, and the cart is stored in the session.  
+✅ **Discount System** - Automatically applies a **10% discount** when 3+ products are added.  
+✅ **Search Bar** - Users can search for products dynamically.  
+✅ **Bootstrap UI** - Clean and responsive design.  
+
+---
+
+## 🛠️ Setup & Installation
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/sazolborman/product_catalog.git
+cd product_catalog
+
+composer install
+npm install
+
+cp .env.example .env
+php artisan key:generate
+
+php artisan migrate --seed
+
+php artisan serve
+
+Method	Route	Description
+GET	/cart/show	Get cart data
+POST	/cart/add	Add item to cart
+POST	/cart/remove	Remove item from cart
+
+
+Developed by Sazol Borman
+
+---
+
+## **3️⃣ Commit History**
+Keep your commits **clean and descriptive**. Example commit messages:
+```bash
+git commit -m "Added product listing with Blade templates"
+git commit -m "Implemented shopping cart with session storage"
+git commit -m "Added discount logic for bulk purchases"
+git commit -m "Enhanced UI with Bootstrap styling"
+git commit -m "Added search functionality for products"
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
